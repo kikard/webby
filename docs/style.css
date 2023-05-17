@@ -1,8 +1,18 @@
 *{
     /* background-color: #DBCDC6; */
-    background-color: antiquewhite;
-
+    /* background-color: antiquewhite; */
+    /* background-color: #dffdd9; */
+    background-color: #e5fdd1;
+    color: #58007e;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    /* font-family: 'Averia Gruesa Libre'; */
 }
+
+@font-face{
+  font-family: myFont;
+  src: url(Averia_Gruesa_Libre/AveriaGruesaLibre-Regular.ttf);
+}
+
 #box{
     display: flex;
     flex-direction: column;
@@ -12,35 +22,37 @@
 }
 
 #top{
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     margin: auto;
-    /* width: 100vw; */
+    width: 80vw;
     padding: 2%;
     /* background-color: rgb(108, 145, 177); */
-    border: 5px solid #E3D26F;
+    /* border: 5px solid #E3D26F; */
 }
 
 #bottom{
     /* background-color: antiquewhite; */
     height: 70vh;
     padding: 3%;
-    border: 5px solid #A0AF84;
+    /* border: 5px solid #A0AF84; */
+    /* background-color: #ACB1D6; */
+    /* background-color: #E5BEEC; */
+    /* background-color: #c9edb4; */
 }
 
 header{
-    font-size: large;
-    padding: 5px 0px;
+    font-family: myFont;
+    font-size: xxx-large;
     width: auto;
-    /* background-color: aquamarine; */
-    color: #7B506F;
 }
 
 nav{
     display: flex;
     flex-direction: row;
-    /* color: antiquewhite; */
-    color: #7B506F; 
+    justify-content: right;
+    font-size: large;
+    font-weight: 600;
 }
 
 a {
@@ -50,6 +62,33 @@ a {
     border-radius: 5px;
 }
 
+/* removing underlines from hyperlinks */
+a:link {text-decoration: none;}
+
+a:visited {text-decoration: none;}
+
+a:hover {text-decoration: none;}
+
+a:active {text-decoration: none;}
+
+.grid-container{
+  /* max-width: 80vw; */
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  gap: 5px 5px;
+  
+}
+.grid-item{
+  width: auto;
+  height: auto;
+  /* background-image: contain; */
+  border: 2px solid goldenrod;
+}
+
+div.grid-container > img{
+  max-width: 2vw;
+}
 
 /* Slideshow container */
 .slideshow-container {
@@ -122,10 +161,10 @@ a {
   /* Fading animation */
   .fade {
     animation-name: fade;
-    animation-duration: 1.2s;
+    animation-duration: 2.5s;
   }
   
   @keyframes fade {
-    from {opacity: .4}
+    from {opacity: .6}
     to {opacity: 1}
   }
