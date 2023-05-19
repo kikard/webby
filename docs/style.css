@@ -62,6 +62,16 @@ a {
     border-radius: 5px;
 }
 
+#bio-div{
+  display: flex; 
+  padding: 10px;
+  font-size: large;
+}
+#bio-div>p{
+  margin: 15px;
+}
+
+
 /* removing underlines from hyperlinks */
 a:link {text-decoration: none;}
 
@@ -92,7 +102,7 @@ div.grid-container > img{
 
 /* Slideshow container */
 .slideshow-container {
-    max-width: 40vw;
+    max-width: 50vw;
     position: relative;
     margin: auto;
   }
@@ -101,6 +111,7 @@ div.grid-container > img{
   .mySlides {
     display: none;
     max-width: 30vw;
+    /* max-height: 20vh; */
     margin: auto;
   }
   
